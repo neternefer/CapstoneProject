@@ -2,7 +2,7 @@
 @import "./reset.local.scss";
 
 html {
-    height: 100vh;
+    min-height: 100%;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
         '. m .'
         '. f .';
     width: 100vw;
-    height: 100%;
+    min-height: 100vh;
 }
 
 header {
@@ -40,7 +40,6 @@ main {
     grid-area: m;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    // grid-gap: 5vh;
 }
 
 footer {
@@ -71,9 +70,9 @@ article {
     // background-color: #b1bac0;
     // background-color: #cad1e1
     background-color: rgba(202, 209, 225, 0.7);
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .card-img img {
@@ -124,14 +123,14 @@ label {
     // color: #67868b;
     color: rgb(91, 111, 110);
     font-size: 1.5rem;
-    padding-bottom: 1vh;
+    margin: 1rem 0 .5rem 0;
 }
 
 input {
     border-radius: 8px;
     color: rgb(97, 127, 127);
     border: none;
-    padding: 1vh;
+    padding: .5rem;
 }
 
 button {
@@ -139,8 +138,8 @@ button {
     font-size: 1.5rem;
     // margin: 0 auto;
     background-color:  rgb(97, 127, 127);
-    padding: 1vh;
-    margin: 4vh 0 2vh 0;
+    padding: .5rem;
+    margin: 2rem 0
 }
 
 .date-supported .description-date {
