@@ -318,5 +318,30 @@ button {
         width: 80%;
         padding: 1rem;
     }
+
+    #img {
+        max-height: 500px;
+    }
+
+    .location {
+        font-size: 2.5rem;
+    }
+
+    .temp {
+        font-size: 5rem;
+    }
+
+    .hidden-display h3,
+    .hidden-display span {
+        font-size: 2.5rem;
+    }
+
+    .hidden-display .card-info {
+        padding-top: 1rem;
+    }
+
+    .hidden-display button {
+        margin: 4rem auto;
+    }
 }
 
