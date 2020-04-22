@@ -66,9 +66,6 @@ article {
 
 .form-article {
     text-align: left;
-    // padding: 4vh 2rem;
-    // background-color: #b1bac0;
-    // background-color: #cad1e1
     background-color: rgba(202, 209, 225, 0.7);
     position: relative;
     top: 50%;
@@ -76,7 +73,6 @@ article {
 }
 
 .card-img img {
-    // width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
@@ -84,7 +80,6 @@ article {
     display: flex;
     flex-direction: column;
     width: 80%;
-    // margin: 4vh 0;
 }
 
 .card-text-section {
@@ -120,7 +115,6 @@ article {
 
 label {
     display: block;
-    // color: #67868b;
     color: rgb(91, 111, 110);
     font-size: 1.5rem;
     margin: 1rem 0 .5rem 0;
@@ -146,30 +140,6 @@ button {
     display: none;
 }
 
-// @media (min-width: 480px) {
-//     header {
-//         font-size: 1rem;
-//     }
-
-//     main {
-//         grid-template-columns: repeat(2, minmax(40vw, 1fr));
-//         grid-template-rows: auto;
-//     }
-
-//     footer {
-//         font-size: .7rem;
-//     }
-
-//     label {
-//         font-size: 1.7rem;
-//     }
-
-//     button {
-//         width: 50vw;
-//         margin: 0 calc(80vw / 4);
-//     }
-// }
-
 @media (min-width: 768px) {
     main {
         display: grid;
@@ -192,43 +162,37 @@ button {
     }
 
     label {
-        padding: 3rem .5rem .5rem .5rem;
+        padding: 1rem 0 .5rem 0;
+        font-size: 1.75rem;
     }
 
     button {
-        width: 70%;
-        margin: 5rem auto;
+        width: 75%;
+        margin: 4rem auto;
     }
 
-    // header {
-    //     font-size: 2rem;
-    // }
+    header {
+        font-size: 2.5rem;
+    }
 
-    // button {
-    //     width: 40vw;
-    //     margin: 0 auto;
-    //     grid-area: b;
-    // }
+    footer {
+        font-size: 1.5rem;
+    }
 
-    // footer {
-    //     font-size: 1rem;
-    // }
+    label {
+        font-size: 1.75rem;
+    }
 }
 
-// @media (min-width: 1024px) {
-//     label {
-//         font-size: 2.5rem;
-//         padding-left: 1rem;
-//     }
+@media (min-width: 1024px) {
+    input {
+        padding: 1rem;
+    }
 
-//     input {
-//         padding: 1rem;
-//     }
-
-//     button {
-//         font-size: 2rem;
-//         padding: 2rem 3rem;
-//         height: 6rem;
-//     }
-// }
+    button {
+        font-size: 2rem;
+        width: 80%;
+        padding: 1rem;
+    }
+}
 
