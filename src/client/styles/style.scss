@@ -19,7 +19,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 1.5rem 1fr 1.5rem;
-    grid-template-rows: 5rem 1fr 4rem;
+    grid-template-rows: 4rem 1fr 3rem;
     grid-template-areas:
         '. h .'
         '. m .'
@@ -85,7 +85,7 @@ article {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 4vh 0;
+    // margin: 4vh 0;
 }
 
 .card-text-section {
@@ -124,7 +124,7 @@ label {
     // color: #67868b;
     color: rgb(91, 111, 110);
     font-size: 1.5rem;
-    padding: 2vh 0;
+    padding-bottom: 1vh;
 }
 
 input {
