@@ -97,7 +97,7 @@ const updateUI = async (updateData) => {
     });
     document.getElementById('img').src = img.hits[0].webformatURL;
     document.getElementById('iconImg').src = `https://www.weatherbit.io/static/img/icons/${updateData['icon']}.png`;
-    showDisplay();
+    showCard();
 };
 
 const howSoon = () => {
@@ -114,6 +114,11 @@ const howSoon = () => {
     })
     return [tripStart, tripEnd, daysToDeparture, tripLength]
 };
+
+const showCard = () => {
+    document.querySelector('.form-article').style.display = 'none';
+    document.querySelector('.hidden-display').style.display = 'block';
+}
 
 export {
     getData,
