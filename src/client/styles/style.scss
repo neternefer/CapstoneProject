@@ -188,6 +188,18 @@ button {
     display: none;
 }
 
+#errorMsg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100px;
+    padding: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: rgba(133, 143, 141, 0.9);
+}
 
 .close {
     position: absolute;
