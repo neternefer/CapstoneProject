@@ -67,23 +67,24 @@ article {
 
 .form-article {
     text-align: left;
+    padding: 4vh 2vw;
     // background-color: #b1bac0;
     // background-color: #cad1e1
     background-color: rgba(202, 209, 225, 0.7);
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: relative;
+    // top: 50%;
+    // transform: translateY(-50%);
 }
 
 .card-img img {
-    width: 100%;
+    // width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    // width: 100%;
 }
 
 .card-text-section {
@@ -133,7 +134,7 @@ input {
 button {
     border-radius: 8px;
     font-size: 1.5rem;
-    margin: 0 auto;
+    // margin: 0 auto;
     background-color:  rgb(97, 127, 127);
 }
 
