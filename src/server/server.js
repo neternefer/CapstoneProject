@@ -21,7 +21,6 @@ app.post('/add', (req, res) => {
     projectData['countryCode'] = req.body.countryCode;
     projectData['tripStart'] = req.body.tripStart;
     projectData['tripEnd'] = req.body.tripEnd;
-    projectData['daysToDeparture'] = req.body.daysToDeparture;
     projectData['tripLength'] = req.body.tripLength;
     projectData['temp'] = req.body.temp;
     projectData['icon'] = req.body.icon;

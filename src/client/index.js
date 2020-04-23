@@ -1,7 +1,7 @@
-
 import { processData } from './js/app'
 import { checkSemanticSupport } from './js/checkSupport'
 import { allClear } from './js/allClear'
+import { showCard } from './js/showCard'
 
 import './styles/normalize.scss'
 import './styles/reset.local.scss'
@@ -11,5 +11,6 @@ checkSemanticSupport();
 
 export {
     processData,
-    allClear
+    allClear,
+    showCard
 }

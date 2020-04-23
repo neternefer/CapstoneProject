@@ -22,11 +22,11 @@
                         <label for="depart">Leaving <span class="description-date">
                             Please use the YYYY-MM-DD format.</span>
                         </label>
-                        <input id="depart" type="date"
+                        <input id="depart" type="date" min="2020-04-25"
                         pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" required>
                         <label for="return">Coming back <span class="description-date">
                             Please use the YYYY-MM-DD format.</span></label>
-                        <input id="return" type="date"
+                        <input id="return" type="date" min="2020-04-26"
                         pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" required>
                     </div>
                     <button id="go" type="submit">Let's Go!</button>
@@ -47,7 +47,7 @@
                         <h3>Return<span id="tripEnd" class="uiData"></span></h3>
                         <h3>Days<span id="tripLength" class="uiData"></span></h3>
                     </div>
-                    <button type="button">PRINT</button>
+                    <button type="button" id="print-btn">PRINT</button>
                 </div>
             </article>
         </main>
