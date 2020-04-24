@@ -27,8 +27,7 @@ app.post('/add', (req, res) => {
     projectData['desc'] = req.body.desc;
     res.send(projectData);
 });
-//Express server
-app.listen(5000, () => {
-    console.log('Listening on port 5000...');
-});
+
+module.exports = app;
+
 

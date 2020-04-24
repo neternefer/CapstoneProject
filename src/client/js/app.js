@@ -111,9 +111,11 @@ const updateUI = async (updateData) => {
             e.innerHTML = updateData[key];
         }
     });
+    //Set src attribute for travel card img and weather icon
     document.getElementById('img').src = img.hits[0].webformatURL;
     document.getElementById('iconImg').src = `https://www.weatherbit.io/static/img/icons/${updateData['icon']}.png`;
-    showCard();
+    //Display travel cars with results
+    Client.showCard();
 };
 
 const howSoon = () => {
@@ -124,6 +126,7 @@ const howSoon = () => {
     const departureDate = new Date(tripStart);
     const returnDate = new Date(tripEnd);
     const tripLength = parseInt((returnDate.getTime() - departureDate.getTime()) / 86400000);
+    //Format data
     [tripStart, tripEnd].forEach((t) => {
         t.split('-').reverse().join('/');
     });
@@ -142,14 +145,6 @@ const showError = (error) => {
     document.querySelector('form').reset();
     return;
 };
-
-const printPage = () => {
-    //Print current page
-    window.print()
-}
-//Attach close icon event listener to close travel card and to print the page
-document.querySelector('.close').addEventListener('click', Client.showCard);
-document.querySelector('#print-btn').addEventListener('click', printPage);
 
 export {
     getData,

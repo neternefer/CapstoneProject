@@ -1,12 +1,12 @@
-//Testing part of allClear function logic
-import { app } from '../server/server'
-import { request } from 'express';
+const app = require('../server/server');
+const supertest = require('supertest');
+const request = supertest(app);
 
-describe('Test endpoint', () => {
-    test('test if index.html is reached', async () => {
-        const response = await request(app)
+it('test if index.html is reached', async done => {
+        const response = await request
         .get('/')
         .send('./dist/index.html')
-    expect(response.statusCode).toBe(200)
+    expect(response.statusCode).toBe(200);
+    done();
     });
-});
+
