@@ -11,9 +11,9 @@
 Travel planning app with Node.js, Express and APIs.
 
 ##TODO
--add more functionality
--use Local Storage
--blueprint for db based app
+- add more functionality
+- use Local Storage
+- blueprint for db based app
 
 ## Screenshots
 Form Card             |  Travel Card
