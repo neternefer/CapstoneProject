@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "start": "node src/server/start.js",
-    "build": "webpack"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
@@ -26,11 +27,14 @@
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.3",
     "npm": "^6.14.4",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
     "supertest": "^4.0.2",
+    "terser-webpack-plugin": "^2.3.5",
     "url-loader": "^4.1.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "workbox-webpack-plugin": "^5.1.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

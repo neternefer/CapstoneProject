@@ -1,20 +1,21 @@
 # WeatherProject
- Weather Journal implementing OpenWeather API
+ Mobilis weather app
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [TODO](#to-do)
+* [Screenshots](#screenshots)
+
 
 ## General info
-Weather Journal created with Node.js, Express and OpenWeather API.
+Travel planning app with Node.js, Express and APIs.
 
 ##TODO
-- add error messages for incorrect input
-- include international searches
-- starting point for notebook app
+-add more functionality
+-use Local Storage
+-blueprint for db based app
 
 ## Screenshots
-Mobile             |  Desktop
+Form Card             |  Travel Card
 :-------------------------:|:-------------------------:
-![Mobile](./screenshots/screen2.png)  |  ![Desktop](./screenshots/screen1.png)
+![Form Card](./screenshots/screen1.png)  |  ![Travel Card](./screenshots/screen2.png)
