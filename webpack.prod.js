@@ -17,6 +17,7 @@ module.exports = {
     },
     output: {
       path: path.join(__dirname, 'dist'),
+      publicPath: '/',
       libraryTarget: 'var',
       library: 'Client'
     },
